@@ -67,21 +67,21 @@ export function setupMoonPhases(date: number, document: Document) {
   getMoonPhase(dateBuffered, xibarCycle, moons.Xibar);
   getMoonPhase(dateBuffered, yavashCycle, moons.Yavash);
 
-  var xibarimage = document.getElementById("xibarImage")!;
+  var xibarimage = <HTMLImageElement>document.getElementById("xibarImage")!;
   xibarimage.src = getImage(moons.Xibar.Phase);
   var xibarText = document.getElementById("xibarPhase")!;
   xibarText.innerHTML = moons.Xibar.Description;
   var xibarDCText = document.getElementById("xibarDC")!;
   xibarDCText.innerHTML = `Spell Difficulty: DC ${moons.Xibar.Check}`;
 
-  var yavashimage = document.getElementById("yavashImage")!;
+  var yavashimage = <HTMLImageElement>document.getElementById("yavashImage")!;
   yavashimage.src = getImage(moons.Yavash.Phase);
   var yavashText = document.getElementById("yavashPhase")!;
   yavashText.innerHTML = moons.Yavash.Description;
   var yavashDCText = document.getElementById("yavashDC")!;
   yavashDCText.innerHTML = `Spell Difficulty: DC ${moons.Yavash.Check}`;
 
-  var katambaimage = document.getElementById("katambaImage")!;
+  var katambaimage = <HTMLImageElement>document.getElementById("katambaImage")!;
   katambaimage.src = getImage(moons.Katamba.Phase);
   var katambaText = document.getElementById("katambaPhase")!;
   katambaText.innerHTML = moons.Katamba.Description;
