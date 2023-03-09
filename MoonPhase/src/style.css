@@ -1,0 +1,118 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  background-image: url('/starbg.png');
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.moonImage {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.yavash{
+  filter: invert(23%) sepia(80%) saturate(3302%) hue-rotate(1deg) brightness(80%) contrast(332%);
+}
+.yavash:hover {
+  filter: invert(23%) sepia(80%) saturate(3302%) hue-rotate(1deg) brightness(80%) contrast(332%) drop-shadow(0 0 1em #fa1909aa);
+}
+.xibar{
+  filter: invert(10%) sepia(80%) saturate(581%) hue-rotate(147deg) brightness(60%) contrast(349%);
+}
+.xibar:hover {
+  filter: invert(10%) sepia(80%) saturate(581%) hue-rotate(147deg) brightness(60%) contrast(349%) drop-shadow(0 0 1em #0bc6f5aa);
+}
+.katamba{
+  filter: invert(110%) sepia(30%) saturate(128%) hue-rotate(318deg) brightness(97%) contrast(103%);
+}
+.katamba:hover {
+  filter: invert(110%) sepia(30%) saturate(128%) hue-rotate(318deg) brightness(97%) contrast(103%) drop-shadow(0 0 1em #f5e23daa);
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+.flexed {
+  width: auto;
+}
+.fat{
+  max-width: fit-content;
+}
+
+.results {
+  padding-top: 32px;
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  font-size: medium;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 2em;
+}
+
+button {
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
