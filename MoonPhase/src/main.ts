@@ -5,7 +5,7 @@ let currentDate = 1;
 let profBonus = 0;
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div style="background-image: url('/starbg.png');">>
+  <div style="background-image: url('/starbg.png');">
     <h1>Elanthia Moon Tracker</h1>
     <div id="XibarSect" class="moon row">
       <div class="column flexed">
